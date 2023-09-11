@@ -97,7 +97,8 @@
       }
 
       footer a:hover {
-        color: rgb(229, 233, 242);
+        color: rgb(208,21,25);
+        text-decoration: none;
       }
 
       footer form {
@@ -105,7 +106,7 @@
       }
 
       footer input[type="email"] {
-        flex: 1;
+        /* flex: 1; */
         padding: 8px;
         border: none;
         border-radius: 4px;
@@ -113,29 +114,33 @@
       }
 
       footer button {
-        background-color: rgb(129, 144, 164);
-        color: white;
+        background-color: white;
+        color:  rgb(71, 82, 94);
         border: none;
         border-radius: 4px;
-        padding: 8px 12px;
+        padding: 8px 30px;
         cursor: pointer;
       }
 
       footer button:hover {
-        background-color: rgb(229, 233, 242);
+        background-color: rgb(208,21,25);
       }
 
-      /* .social-icons a {
+      .social-icons a {
         font-size: 24px;
         margin-right: 10px;
         text-decoration: none;
         height: 30px;
         width: auto;
-      } */
+      }
 
-      /* .social-icons a:hover {
-        color: rgb(229, 233, 242);
-      } */
+      .empty-box {
+        height: 20px;
+        width: 100px;
+        border-radius: 4px;
+        background-color: rgb(129,144,164);
+      }
+
     </style>
   </head>
   <body>
@@ -167,47 +172,47 @@
       </div>
     </main>
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Contact us</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Search</a></li>
-              <li><a href="#">T&Cs</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Community</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h4>Get our newsletter</h4>
-            <form>
-              <input type="email" placeholder="Enter your email" />
-              <button type="submit">Subscribe</button>
-            </form>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-md-12">
-            <div class="social-icons">
-             <a href="#"> <i class="fa fa-facebook-official"></i></a>
-             <a href="#"> <i class="fa fa-instagram"></i></a><!-- sorry, could find what I belive is an old insta logo that fits to the mockup  -->
-             <a href="#"> <i class="fa fa-snapchat-ghost"></i></a>
-             <a href="#"> <i class="fa fa-twitter"></i></a>
-             <a href="#"> <i class="fa fa-youtube-play"></i></a>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="empty-box"></div>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">T & Cs</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Community</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4>Get our newsletter</h4>
+              <form>
+                <input type="email" placeholder="Enter your email" />
+                <button type="submit">Subscribe</button>
+              </form>
+              <div class="social-icons mt-4">
+                <a href="#"><i class="fa fa-facebook-official"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-snapchat-ghost"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+      
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
