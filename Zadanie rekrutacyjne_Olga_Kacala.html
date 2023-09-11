@@ -1,112 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Zadanie rekrutacyjne - Olga Kacala</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Front-end taks - Olga Kacala</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
-        body {
-            background-color: rgb(71,82,94);
-            color: white;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+      body {
+        background-color: rgb(71, 82, 94);
+        color: white;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
 
-        .navbar {
-            background-color: rgb(199,210,223);
-        }
+      .navbar {
+        background-color: rgb(199, 210, 223);
+        height: auto;
+      }
 
-        .logo {
-            color: white;
-            background-color: rgb(129,144,164);
-            padding: 8px 12px;
-            border-radius: 4px;
-            font-weight: bold;
-        }
+      .logo {
+        color: white;
+        background-color: rgb(129, 144, 164);
+        padding: 8px 12px;
+        border-radius: 4px;
+        font-weight: bold;
+      }
 
-    .navbar-nav {
+      .navbar-nav {
         display: flex;
         flex-direction: row;
-    }
+      }
 
-        .nav-link {
-            color:  rgb(129,144,164);
-            margin: 0px 10px;
-            transition: background-color 0.3s;
-        }
+      .nav-link {
+        color: rgb(129, 144, 164);
+        margin: 0px 10px;
+        transition: background-color 0.3s;
+      }
 
-        .nav-link:hover {
-            background-color: rgb(229,233,242);
-            text-decoration: none;
-            color:  rgb(129,144,164);
-          
-            
-        }
+      .nav-link:hover {
+        background-color: rgb(229, 233, 242);
+        text-decoration: none;
+        color: rgb(129, 144, 164);
+      }
 
-        .cart {
-            color: white;
-            background-color: rgb(71,82,94);
-            padding: 8px 12px;
-            border-radius: 4px;
-            text-decoration: none;
-        }
+      .cart {
+        color: white;
+        background-color: rgb(71, 82, 94);
+        padding: 8px 12px;
+        border-radius: 4px;
+        text-decoration: none;
+      }
 
-        .cart:hover {
-            text-decoration: none;
-            color: white;
-        }
+      .cart:hover {
+        text-decoration: none;
+        color: white;
+      }
 
-        main {
-            background-color: white;
-        }
-        
-         footer {
-            background-color: rgb(71,82,94);
-            padding: 20px;
-        }
+      main {
+        background-color: white;
+        height: auto;
+      }
 
-        main {
-            min-height: 70vh; 
-        }
+      footer {
+        height: 25vh;
+        background-color: rgb(71, 82, 94);
+        color: white;
+        padding: 20px 0;
+      }
 
-        footer {
-            text-align: center;
-        }
+      footer ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      footer ul li {
+        margin-bottom: 8px;
+      }
+
+      footer h4 {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      footer a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s;
+      }
+
+      footer a:hover {
+        color: rgb(229, 233, 242);
+      }
+
+      footer form {
+        display: flex;
+      }
+
+      footer input[type="email"] {
+        flex: 1;
+        padding: 8px;
+        border: none;
+        border-radius: 4px;
+        margin-right: 10px;
+      }
+
+      footer button {
+        background-color: rgb(129, 144, 164);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+
+      footer button:hover {
+        background-color: rgb(229, 233, 242);
+      }
+
+      /* .social-icons a {
+        font-size: 24px;
+        margin-right: 10px;
+        text-decoration: none;
+        height: 30px;
+        width: auto;
+      } */
+
+      /* .social-icons a:hover {
+        color: rgb(229, 233, 242);
+      } */
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <header class="navbar">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <div class="logo">Logo</div>
-                <nav>
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#">Start</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <a class="cart" href="#">Cart (1)</a>
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <div class="logo">Logo</div>
+          <nav>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">Start</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            </ul>
+          </nav>
         </div>
+        <a class="cart" href="#">Cart (1)</a>
+      </div>
     </header>
 
     <main>
-        <div class="container">
-            <h1>Witaj na naszej stronie!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec tristique dolor.</p>
-        </div>
+      <div class="container">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
+          tristique dolor.
+        </p>
+      </div>
     </main>
-
     <footer>
-        &copy; 2023 Moja Strona. Wszelkie prawa zastrzeżone.
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Search</a></li>
+              <li><a href="#">T&Cs</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Get our newsletter</h4>
+            <form>
+              <input type="email" placeholder="Enter your email" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-12">
+            <div class="social-icons">
+             <a href="#"> <i class="fa fa-facebook-official"></i></a>
+             <a href="#"> <i class="fa fa-instagram"></i></a><!-- sorry, could find what I belive is an old insta logo that fits to the mockup  -->
+             <a href="#"> <i class="fa fa-snapchat-ghost"></i></a>
+             <a href="#"> <i class="fa fa-twitter"></i></a>
+             <a href="#"> <i class="fa fa-youtube-play"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
