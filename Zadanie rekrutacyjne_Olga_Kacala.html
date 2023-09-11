@@ -14,15 +14,28 @@
     />
     <style>
       body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
         background-color: rgb(71, 82, 94);
         color: white;
         margin: 0;
         font-family: Arial, sans-serif;
       }
 
+      h1,
+      h2 {
+        color: rgb(71, 82, 94);
+      }
+
+      p {
+        color: rgb(129, 144, 164);
+      }
+
       .navbar {
         background-color: rgb(199, 210, 223);
         height: auto;
+        flex: 0;
       }
 
       .logo {
@@ -60,16 +73,20 @@
 
       .cart:hover {
         text-decoration: none;
+        background-color: rgb(208, 21, 25);
         color: white;
       }
 
       main {
         background-color: white;
         height: auto;
+        flex-grow: 1;
+        padding: 30px 0;
       }
 
       footer {
-        height: 25vh;
+        height: 25%;
+        flex: 0;
         background-color: rgb(71, 82, 94);
         color: white;
         padding: 20px 0;
@@ -97,7 +114,7 @@
       }
 
       footer a:hover {
-        color: rgb(208,21,25);
+        color: rgb(208, 21, 25);
         text-decoration: none;
       }
 
@@ -106,7 +123,7 @@
       }
 
       footer input[type="email"] {
-        /* flex: 1; */
+        flex: 1;
         padding: 8px;
         border: none;
         border-radius: 4px;
@@ -115,7 +132,7 @@
 
       footer button {
         background-color: white;
-        color:  rgb(71, 82, 94);
+        color: rgb(71, 82, 94);
         border: none;
         border-radius: 4px;
         padding: 8px 30px;
@@ -123,7 +140,7 @@
       }
 
       footer button:hover {
-        background-color: rgb(208,21,25);
+        background-color: rgb(208, 21, 25);
       }
 
       .social-icons a {
@@ -134,13 +151,46 @@
         width: auto;
       }
 
-      .empty-box {
+      .footer-empty-box {
         height: 20px;
         width: 100px;
         border-radius: 4px;
-        background-color: rgb(129,144,164);
+        background-color: rgb(129, 144, 164);
+      }
+      .main-text-box {
+        background-color: blue;
+        height: 100%;
       }
 
+      .small-empty-box {
+        background-color: rgb(229, 233, 242);
+        height: 100px;
+      }
+
+      .main-columns {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+
+      .main-column {
+        background-color: white;
+        padding: 20px;
+        border-radius: 4px;
+      }
+
+      .main-column h2 {
+        margin-top: 20px;
+      }
+
+      .title-1 {
+        grid-column: span 4;
+        text-align: left;
+        font-size: 24px;
+        font-weight: bold;
+        color: rgb(71, 82, 94);
+
+      }
     </style>
   </head>
   <body>
@@ -164,55 +214,78 @@
     </header>
 
     <main>
-      <div class="container">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
-          tristique dolor.
-        </p>
+      <div class="container main-columns">
+        <div class="title-1">Title 1</div>
+        <div class="main-column"><div class="main-text-box"></div></div>
+
+        <div class="main-column">
+          <div class="small-empty-box"></div>
+          <h2>Lorem ipsum dolor</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
+            tristique dolor.
+          </p>
+        </div>
+        <div class="main-column">
+          <div class="small-empty-box"></div>
+          <h2>Lorem ipsum dolor</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
+            tristique dolor.
+          </p>
+        </div>
+        <div class="main-column">
+          <div class="small-empty-box"></div>
+          <h2>Lorem ipsum dolor</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
+            tristique dolor.
+          </p>
+        </div>
       </div>
     </main>
+
     <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="empty-box"></div>
-            </div>
-            <div class="col-md-3">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <ul>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="#">T & Cs</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Community</a></li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <h4>Get our newsletter</h4>
-              <form>
-                <input type="email" placeholder="Enter your email" />
-                <button type="submit">Subscribe</button>
-              </form>
-              <div class="social-icons mt-4">
-                <a href="#"><i class="fa fa-facebook-official"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-snapchat-ghost"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-youtube-play"></i></a>
-              </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer-empty-box"></div>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Search</a></li>
+              <li><a href="#">T & Cs</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Get our newsletter</h4>
+            <form>
+              <input type="email" placeholder="Enter your email" />
+              <button type="submit">Subscribe</button>
+            </form>
+            <div class="social-icons mt-4">
+              <a href="#"><i class="fa fa-facebook-official"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-snapchat-ghost"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-youtube-play"></i></a>
             </div>
           </div>
         </div>
-      </footer>
-      
+      </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
