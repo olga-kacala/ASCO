@@ -24,7 +24,8 @@
       }
 
       h1,
-      h2 {
+      h2,
+      h3 {
         color: rgb(71, 82, 94);
       }
 
@@ -32,6 +33,7 @@
         color: rgb(129, 144, 164);
       }
 
+     
       .navbar {
         background-color: rgb(199, 210, 223);
         height: auto;
@@ -44,6 +46,11 @@
         padding: 8px 12px;
         border-radius: 4px;
         font-weight: bold;
+      }
+
+      .logo:hover {
+        color: rgb(208, 21, 25);
+        text-decoration: none;
       }
 
       .navbar-nav {
@@ -157,39 +164,36 @@
         border-radius: 4px;
         background-color: rgb(129, 144, 164);
       }
-      .main-text-box {
-        background-color: blue;
-        height: 100%;
+
+      /* Custom CSS for styling */
+      .grid-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
       }
 
-      .small-empty-box {
-        background-color: rgb(229, 233, 242);
+      .grid-item {
+        flex-basis: calc(25% - 20px);
+        margin-bottom: 20px;
+        padding: 15px;
+      }
+
+      .left-column {
+        flex-basis: calc(25% - 20px);
+        margin-bottom: 20px;
+        padding: 15px;
+      }
+
+      .title-column {
+        flex-basis: calc(100% - 20px);
+        margin-bottom: 20px;
+        padding: 15px;
+      }
+
+      .small-pic-empty {
+        width: auto;
         height: 100px;
-      }
-
-      .main-columns {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-      }
-
-      .main-column {
-        background-color: white;
-        padding: 20px;
-        border-radius: 4px;
-      }
-
-      .main-column h2 {
-        margin-top: 20px;
-      }
-
-      .title-1 {
-        grid-column: span 4;
-        text-align: left;
-        font-size: 24px;
-        font-weight: bold;
-        color: rgb(71, 82, 94);
-
+        background-color: rgb(229, 233, 242);
       }
     </style>
   </head>
@@ -197,7 +201,7 @@
     <header class="navbar">
       <div class="container d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
-          <div class="logo">Logo</div>
+          <a class="logo" href="https://asco.com.pl/" target="blank">Logo</a>
           <nav>
             <ul class="navbar-nav">
               <li class="nav-item"><a class="nav-link" href="#">Start</a></li>
@@ -214,33 +218,32 @@
     </header>
 
     <main>
-      <div class="container main-columns">
-        <div class="title-1">Title 1</div>
-        <div class="main-column"><div class="main-text-box"></div></div>
-
-        <div class="main-column">
-          <div class="small-empty-box"></div>
-          <h2>Lorem ipsum dolor</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
-            tristique dolor.
-          </p>
-        </div>
-        <div class="main-column">
-          <div class="small-empty-box"></div>
-          <h2>Lorem ipsum dolor</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
-            tristique dolor.
-          </p>
-        </div>
-        <div class="main-column">
-          <div class="small-empty-box"></div>
-          <h2>Lorem ipsum dolor</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
-            tristique dolor.
-          </p>
+      <div class="container mt-5">
+        <div class="row">
+          <div
+            class="col-md-4"
+            style="background-color: rgb(199, 210, 223); border-radius: 4px"
+          ></div>
+          <div class="col-md-8">
+            <h2>Title 1</h2>
+            <div class="grid-container">
+              <div class="grid-item">
+                <div class="small-pic-empty"></div>
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="grid-item">
+                <div class="small-pic-empty"></div>
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="grid-item">
+                <div class="small-pic-empty"></div>
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -276,9 +279,17 @@
               <button type="submit">Subscribe</button>
             </form>
             <div class="social-icons mt-4">
-              <a href="#"><i class="fa fa-facebook-official"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-              <a href="#"><i class="fa fa-snapchat-ghost"></i></a>
+              <a href="https://github.com/olga-kacala" target="_blank"
+                ><i class="fa fa-facebook-official"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/olga-kacala/" target="_blank"
+                ><i class="fa fa-instagram"></i
+              ></a>
+              <a
+                href="https://infoshareacademy.github.io/jfddr8-team-pandy-z-kosmosu/"
+                target="_blank"
+                ><i class="fa fa-snapchat-ghost"></i
+              ></a>
               <a href="#"><i class="fa fa-twitter"></i></a>
               <a href="#"><i class="fa fa-youtube-play"></i></a>
             </div>
