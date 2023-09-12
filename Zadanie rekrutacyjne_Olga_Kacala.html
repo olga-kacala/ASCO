@@ -33,11 +33,12 @@
         color: rgb(129, 144, 164);
       }
 
-     
       .navbar {
         background-color: rgb(199, 210, 223);
         height: auto;
         flex: 0;
+        margin: 0px;
+        padding: 0;
       }
 
       .logo {
@@ -56,18 +57,30 @@
       .navbar-nav {
         display: flex;
         flex-direction: row;
+        height: 100%;
+        margin: 0;
+        padding: 0;
       }
 
       .nav-link {
+        display: inline-block;
         color: rgb(129, 144, 164);
         margin: 0px 10px;
-        transition: background-color 0.3s;
+
+        position: relative;
+        border: 8px solid rgb(199, 210, 223);
       }
 
       .nav-link:hover {
         background-color: rgb(229, 233, 242);
         text-decoration: none;
         color: rgb(129, 144, 164);
+        border: 8px solid rgb(229, 233, 242);
+      }
+
+      .nav-item {
+        margin: 0;
+        padding: 0;
       }
 
       .cart {
@@ -165,7 +178,6 @@
         background-color: rgb(129, 144, 164);
       }
 
-      /* Custom CSS for styling */
       .grid-container {
         display: flex;
         justify-content: space-between;
@@ -230,17 +242,32 @@
               <div class="grid-item">
                 <div class="small-pic-empty"></div>
                 <h3>Lorem ipsum dolor</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Repudiandae in ullam excepturi dolore illo, dolores, omnis
+                  quasi quae placeat totam itaque adipisci dicta unde hic
+                  veritatis harum voluptates consectetur ad.
+                </p>
               </div>
               <div class="grid-item">
                 <div class="small-pic-empty"></div>
                 <h3>Lorem ipsum dolor</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Repudiandae in ullam excepturi dolore illo, dolores, omnis
+                  quasi quae placeat totam itaque adipisci dicta unde hic
+                  veritatis harum voluptates consectetur ad.
+                </p>
               </div>
               <div class="grid-item">
                 <div class="small-pic-empty"></div>
                 <h3>Lorem ipsum dolor</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Repudiandae in ullam excepturi dolore illo, dolores, omnis
+                  quasi quae placeat totam itaque adipisci dicta unde hic
+                  veritatis harum voluptates consectetur ad.
+                </p>
               </div>
             </div>
           </div>
